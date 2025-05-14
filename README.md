@@ -1,2 +1,2 @@
 # cybersecurity-portfolio
-Hands-on cybersecurity projects
+Hands-on forensic investigation labs using FTK, Autopsy, and CLI tools 
