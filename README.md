@@ -1,41 +1,86 @@
-# Social Engineering Defense Mechanisms
+# 🛡️ Phishing & Vishing Defense Capstone – Human-Centric Cybersecurity Simulation
 
-Capstone project tackling phishing and vishing threats through behavioral simulations and a web-based awareness hub.
+**Capstone Project** | Yeshiva University | Aug–Dec 2024  
 
-## 🔍 Project Overview
+---
 
-Phishing scams cost over $10.3B annually (FBI IC3, 2022). This project focuses on psychological manipulation used in social engineering attacks and builds a simulation and education system to help users recognize and defend against them.
+## 🎯 Objective
 
-## 💡 What We Built
+This project focuses on combating social engineering through a multi-layered framework of **phishing and vishing simulations**, **behavioral risk scoring**, and **awareness training tools**. We replicated real-world attack vectors to assess and improve human defense mechanisms.
 
-- **Phishing Simulations** – Python-based emails mimicking Facebook, Google, Amazon to analyze click rates and logging behavior.
-- **AI Vishing Calls** – Automated Twilio calls simulating urgent scam scenarios (e.g., bank fraud alerts).
-- **Awareness Hub** – Interactive web modules on phishing types, training quizzes, and a reporting tool.
+---
 
-🔗 **Website Demo**: (https://phishingtrainningmodules.netlify.app/email-phishing)
+## 🧩 Components
 
-## 📊 Outcomes
+### 📧 Phishing Simulation (`/phishing_simulator`)
+- Python-based email sender mimicking Google, Facebook, Amazon
+- Tracks open, click-through, and submission behavior
+- Used for training and risk profiling
 
-- Increased phishing awareness from **55% to 85%** after training.
-- Highlighted the psychological factors behind phishing (urgency, authority).
-- Framework shared with university cybersecurity forums.
+### 📞 Vishing Bot (`/vishing_bot`)
+- Voice phishing simulation using **Twilio API**
+- Scripted urgent call scenarios (“Your bank account is locked”)
+- Collected user response metrics (e.g., panic triggers)
 
-## 🛠️ Technologies Used
+### 🌐 Awareness Portal (`/awareness_portal`)
+- HTML/CSS site with phishing quizzes, modules, and a reporting tool
+- Interactive learning experience to boost detection skills
 
-Python, Flask, Twilio, TensorFlow, NLP, HTML/CSS, Netlify
+### 🔍 Risk Scoring (`/risk_scoring_model`)
+- Persona-based behavioral analysis using Excel and survey data
+- Risk scoring framework to prioritize follow-up training
 
-## 📁 Project Files
+### 🧩 Chrome Extension (`/browser_extension`)
+- Warns users when they visit known phishing sites
+- Manual “check this site” button for real-time awareness
 
-- `/code/` – Simulation scripts (phishing, Twilio, Flask)
-- `/website/` – Awareness hub content and frontend
-- `/docs/` – Report and presentation
-- `/media/` – Screenshots or demo videos
+---
 
-## 📄 Deliverables
+## 📊 Key Results
 
-- 📘 Final Report: `Final Project Report.docx`
-- 🎞️ Presentation: `Phishing_Vishing_Presentation.pptx`
-- 🌐 Awareness Site:(https://phishingtrainningmodules.netlify.app/email-phishing)
+- 📉 improved participant detection rates from 55% to 85% post-training.
+- 🎯 Created vishing simulations that generated 70+ unique data points
+- 🧠 Developed risk scores for user personas across departments
+- 🔁 Designed scalable SOC workflows for phishing detection and triage
 
-> ⚠️ Educational use only. No real data or users were compromised.
+---
+
+## 🛠️ Tech Stack
+
+- Python · Flask · JavaScript · HTML/CSS
+- Twilio API · Excel · Matplotlib · Chrome Extensions (Manifest V3)
+
+---
+
+## 🚀 How to Use
+
+1. Clone repo and explore folders by use case
+2. Run phishing simulator via Python SMTP setup (see README in `/phishing_simulator`)
+3. Deploy vishing bot via Twilio (setup instructions in `/vishing_bot`)
+4. Open awareness portal locally or host on a web server
+5. Load Chrome extension from `/browser_extension` using `chrome://extensions`
+
+---
+
+## 📁 Project Artifacts
+
+- 📽️ [Demo Video](https://1drv.ms/v/c/754c82fbaed9c76f/EU3AcTGy-CJGgJU2eL2NTlIBJiWMNtdi1AwEmG2Eh6duGg?e=khwZVY)  
+- 📑 Final Report + Presentation (`/docs/`)  
+- 📊 Risk Persona Models (Excel)
+
+---
+
+## 👥 Authors
+
+- Chandana Yadav Datti  
+- Ravi Charan Teja Boddeti  
+- Vinay Kumar
+- Komali Ala
+- Vamsi Krishna 
+
+---
+
+## 🔐 Why This Matters
+
+Human error is the #1 cyber vulnerability. This project demonstrates a scalable, behavioral-first approach to training users against social engineering tactics like phishing and vishing.
 
